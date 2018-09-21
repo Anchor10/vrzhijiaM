@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="format-detection" content="telephone=no,email=no,adress=no" />
+    <title></title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta name="applicable-device" content="mobile">
+    <link rel="stylesheet" href="lib/css/base.css">
+    <link rel="stylesheet" href="lib/css/index.css">
+    <link rel="stylesheet" href="lib/css/swiper.min.css">
+    <script src="lib/js/jquery.min.js"></script>
+    <script src="lib/js/swiper.min.js"></script>
+</head>
+
+<body>
+    <!-- 公共头部 开始 -->
+    <div class="cover"></div>
+    <div class="hide-menu">
+        <div class="hd">
+            <em></em>
+            <span>快捷导航</span>
+        </div>
+        <ul class="hide-nav">
+            <li>
+                <a href="/">
+                    <i></i>首页</a>
+            </li>
+            <li>
+                <a href="/game/">
+                    <i></i>VR游戏</a>
+            </li>
+            <li>
+                <a href="/azvr/">
+                    <i></i>安卓VR</a>
+            </li>
+            <li>
+                <a href="/pcvr/">
+                    <i></i>PC VR</a>
+            </li>
+            <li>
+                <a href="/iosvr/">
+                    <i></i>IOS VR</a>
+            </li>
+            <li>
+                <a href="/soft/">
+                    <i></i>VR应用</a>
+            </li>
+            <li>
+                <a href="/vrzy/">
+                    <i></i>VR资源</a>
+            </li>
+            <li>
+                <a href="/zixun/">
+                    <i></i>VR资讯</a>
+            </li>
+            <li>
+                <a href="/pingce/">
+                    <i></i>评测</a>
+            </li>
+            <li>
+                <a href="/zhuanti/">
+                    <i></i>专题</a>
+            </li>
+            <li>
+                <a href="/rank/">
+                    <i></i>排行</a>
+            </li>
+            <li>
+                <a href="/shipin/">
+                    <i></i>VR视频</a>
+            </li>
+        </ul>
+    </div>
+    <div class="h-top header-fixed">
+        <div class="android-header">
+            <a href="/">
+                <img src="lib/images/bule-logo.png" alt="VR之家" class="tongyi fl">
+            </a>
+            <a href="javascript:void(0)" title="快捷导航">
+                <div class="top-more fr"></div>
+            </a>
+            <div class="top-search">
+                <form method="post" action="/e/search/index.php">
+                    <input type="hidden" name="show" value="title">
+                    <input type="hidden" name="tbname" value="download">
+                    <input type="hidden" name="tempid" value="1">
+                    <input type="text" class="t-search-tx" value="" name="keyboard" placeholder="请输入搜索词...">
+                    <input type="submit" class="t-search-bt" value="搜索">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <!-- 顶部导航 -->
+        <ul class="menu-green of">
+            <li class="hover">
+                <a href="/">首页</a>
+            </li>
+            <li>
+                <a href="/game/">VR游戏</a>
+            </li>
+            <li>
+                <a href="/zixun/">VR资讯</a>
+            </li>
+            <li>
+                <a href="/pingce/">评测</a>
+            </li>
+            <li>
+                <a href="/shipin/">视频</a>
+            </li>
+        </ul>
+        <!-- 轮播 -->
+        <div class="swiper-container" id="indexPage-slide">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href="">
+                        <img src="http://img.cnanzhi.com/upload/20180705/bc212867f1a9f165ffadb8b129e1c5d7.jpg">
+                        <div class="slide-txt">屠鲲传说BT满V公益服:上线送vip18(满V),8888元宝</div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="">
+                        <img src="http://img.cnanzhi.com/upload/20180627/beeef98fa24a7901e47ff3b327e04939.jpg">
+                        <div class="slide-txt">屠鲲传说BT满V公益服:上线送vip18(满V),8888元宝</div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="">
+                        <img src="http://img.cnanzhi.com/upload/20180622/2dade188be9d927436a5d21a44ae9aa4.jpg">
+                        <div class="slide-txt">屠鲲传说BT满V公益服:上线送vip18(满V),8888元宝</div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="">
+                        <img src="http://pic3.3733.com/d/file/zixun/dongtai/2017-09-18/ff7e2c88bb2d42aed396165b0c400646.jpg">
+                        <div class="slide-txt">屠鲲传说BT满V公益服:上线送vip18(满V),8888元宝</div>
+                    </a>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <!-- 类型导航 -->
+        <div class="four-channel clearfix">
+            <ul class="clearfix">
+                <li>
+                    <a href="/rom/">
+                        <div class="back-color">
+                            <img src="lib/images/game.png">
+                        </div>
+                        <span>安卓VR</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/game/">
+                        <div class="back-color">
+                            <img src="lib/images/smallgame.png">
+                        </div>
+                        <span>变态手游</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/apk/">
+                        <div class="back-color">
+                            <img src="lib/images/rocket.png">
+                        </div>
+                        <span>VR资源</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/jiaocheng/">
+                        <div class="back-color">
+                            <img src="lib/images/guides.png">
+                        </div>
+                        <span>资讯</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- 今日看点 -->
+        <div class="today-read">
+            <div class="section-title">
+                <h3>今日看点</h3>
+            </div>
+            <ul class="read-list">
+                <li class="read-item">
+                    <a href="">
+                        <div class="read-left">
+                            <img src="http://newsimg.5054399.com/uploads/170712/_1543205E.jpg" alt="">
+                        </div>
+                        <div class="read-right">
+                            <h4>中铁电建携盾构机运行体验VR 走进第五届南博会</h4>
+                            <div class="read-info">
+                                <span>作者:JOYChen</span>
+                                <span class="date">2018-07-11</span>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="read-item">
+                    <a href="">
+                        <div class="read-left">
+                            <img src="http://newsimg.5054399.com/uploads/170712/_1543205E.jpg" alt="">
+                        </div>
+                        <div class="read-right">
+                            <h4>中铁电建携盾构机运行体验VR 走进第五届南博会</h4>
+                            <div class="read-info">
+                                <span>作者:JOYChen</span>
+                                <span class="date">2018-07-11</span>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="read-item">
+                    <a href="">
+                        <div class="read-left">
+                            <img src="http://newsimg.5054399.com/uploads/170712/_1543205E.jpg" alt="">
+                        </div>
+                        <div class="read-right">
+                            <h4>中铁电建携盾构机运行体验VR 走进第五届南博会</h4>
+                            <div class="read-info">
+                                <span>作者:JOYChen</span>
+                                <span class="date">2018-07-11</span>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="read-item">
+                    <a href="">
+                        <div class="read-left">
+                            <img src="http://newsimg.5054399.com/uploads/170712/_1543205E.jpg" alt="">
+                        </div>
+                        <div class="read-right">
+                            <h4>中铁电建携盾构机运行体验VR 走进第五届南博会</h4>
+                            <div class="read-info">
+                                <span>作者:JOYChen</span>
+                                <span class="date">2018-07-11</span>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="read-item">
+                    <a href="">
+                        <div class="read-left">
+                            <img src="http://newsimg.5054399.com/uploads/170712/_1543205E.jpg" alt="">
+                        </div>
+                        <div class="read-right">
+                            <h4>中铁电建携盾构机运行体验VR 走进第五届南博会</h4>
+                            <div class="read-info">
+                                <span>作者:JOYChen</span>
+                                <span class="date">2018-07-11</span>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- 热门手游 -->
+        <div class="hot-game">
+            <div class="hot-title">热门手游
+                <a href="" class="hot-more">更多&gt;</a>
+            </div>
+            <ul class="hot-list">
+                <li class="hot-item">
+                    <a href="">
+                        <img src="https://www.ttrar.com/uploadfile/2018/0709/20180709100442717.png" alt="">
+                        <p>三国艳义</p>
+                        <span>82.8M</span>
+                    </a>
+                    <a href="" class="down-btn">下载</a>
+                </li>
+                <li class="hot-item">
+                    <a href="">
+                        <img src="https://www.ttrar.com/uploadfile/2018/0709/20180709100442717.png" alt="">
+                        <p>球球大作战</p>
+                        <span>82.8M</span>
+                    </a>
+                    <a href="" class="down-btn">下载</a>
+                </li>
+                <li class="hot-item">
+                    <a href="">
+                        <img src="https://www.ttrar.com/uploadfile/2018/0709/20180709100442717.png" alt="">
+                        <p>三国艳义</p>
+                        <span>82.8M</span>
+                    </a>
+                    <a href="" class="down-btn">下载</a>
+                </li>
+                <li class="hot-item">
+                    <a href="">
+                        <img src="https://www.ttrar.com/uploadfile/2018/0709/20180709100442717.png" alt="">
+                        <p>三国艳义</p>
+                        <span>82.8M</span>
+                    </a>
+                    <a href="" class="down-btn">下载</a>
+                </li>
+            </ul>
+
+        </div>
+        <!-- 福利游戏VR游戏 -->
+        <div class="game-container">
+            <div class="game-top3">
+                <div class="game-title">
+                    <h3 class="wel-game on">福利游戏</h3>
+                    <h3 class="vr-game">VR游戏</h3>
+                    <a href="" class="wel-more game-more">更多&gt;</a>
+                    <a href="" class="vr-more game-more" style="display: none;">更多&gt;</a>
+                </div>
+                <ul class="top3-list">
+                    <li class="top3-item">
+                        <a href="">
+                            <img src="https://www.ttrar.com/uploadfile/2018/0709/20180709100442717.png" alt="">
+                            <p>福利三国艳义</p>
+                            <span>82.8M</span>
+                        </a>
+                        <a href="" class="game-down">下载</a>
+                    </li>
+                    <li class="top3-item">
+                        <a href="">
+                            <img src="https://www.ttrar.com/uploadfile/2018/0709/20180709100442717.png" alt="">
+                            <p>三国艳义</p>
+                            <span>82.8M</span>
+                        </a>
+                        <a href="" class="game-down">下载</a>
+                    </li>
+                    <li class="top3-item">
+                        <a href="">
+                            <img src="https://www.ttrar.com/uploadfile/2018/0709/20180709100442717.png" alt="">
+                            <p>三国艳义</p>
+                            <span>82.8M</span>
+                        </a>
+                        <a href="" class="game-down">下载</a>
+                    </li>
+                </ul>
+                <ul class="top3-list" style="display: none;">
+                    <li class="top3-item">
+                        <a href="">
+                            <img src="https://www.ttrar.com/uploadfile/2018/0710/20180710105238577.png" alt="">
+                            <p>VR三国艳义</p>
+                            <span>82.8M</span>
+                        </a>
+                        <a href="" class="game-down">下载</a>
+                    </li>
+                    <li class="top3-item">
+                        <a href="">
+                            <img src="https://www.ttrar.com/uploadfile/2018/0710/20180710105238577.png" alt="">
+                            <p>三国艳义</p>
+                            <span>82.8M</span>
+                        </a>
+                        <a href="" class="game-down">下载</a>
+                    </li>
+                    <li class="top3-item">
+                        <a href="">
+                            <img src="https://www.ttrar.com/uploadfile/2018/0710/20180710105238577.png" alt="">
+                            <p>三国艳义</p>
+                            <span>82.8M</span>
+                        </a>
+                        <a href="" class="game-down">下载</a>
+                    </li>
+                </ul>
+            </div>
+            <ul class="game-list">
+                <li class="game-item">
+                    <div class="game-left">
+                        <a href="">
+                            <img src="https://www.ttrar.com/uploadfile/2018/0709/20180709100442717.png" alt="">
+                        </a>
+                    </div>
+                    <div class="game-center">
+                        <h3>
+                            <a href="">球球大作战腾讯版</a>
+                        </h3>
+                        <div class="game-info">休闲益智 | 127.5MB</div>
+                        <p class="game-detail">小编点评:球球大作战腾讯版是一款非常好玩的游戏</p>
+                    </div>
+                    <a href="" class="game-right">下载</a>
+                </li>
+                <li class="game-item">
+                    <div class="game-left">
+                        <a href="">
+                            <img src="https://www.ttrar.com/uploadfile/2018/0709/20180709100442717.png" alt="">
+                        </a>
+                    </div>
+                    <div class="game-center">
+                        <h3>
+                            <a href="">球球大作战腾讯版</a>
+                        </h3>
+                        <div class="game-info">休闲益智 | 127.5MB</div>
+                        <p class="game-detail">小编点评:球球大作战腾讯版是一款非常好玩的游戏</p>
+                    </div>
+                    <a href="" class="game-right">下载</a>
+                </li>
+                <li class="game-item">
+                    <div class="game-left">
+                        <a href="">
+                            <img src="https://www.ttrar.com/uploadfile/2018/0709/20180709100442717.png" alt="">
+                        </a>
+                    </div>
+                    <div class="game-center">
+                        <h3>
+                            <a href="">球球大作战腾讯版</a>
+                        </h3>
+                        <div class="game-info">休闲益智 | 127.5MB</div>
+                        <p class="game-detail">小编点评:球球大作战腾讯版是一款非常好玩的游戏</p>
+                    </div>
+                    <a href="" class="game-right">下载</a>
+                </li>
+                <li class="game-item">
+                    <div class="game-left">
+                        <a href="">
+                            <img src="https://www.ttrar.com/uploadfile/2018/0709/20180709100442717.png" alt="">
+                        </a>
+                    </div>
+                    <div class="game-center">
+                        <h3>
+                            <a href="">球球大作战腾讯版</a>
+                        </h3>
+                        <div class="game-info">休闲益智 | 127.5MB</div>
+                        <p class="game-detail">小编点评:球球大作战腾讯版是一款非常好玩的游戏</p>
+                    </div>
+                    <a href="" class="game-right">下载</a>
+                </li>
+                <li class="game-item">
+                    <div class="game-left">
+                        <a href="">
+                            <img src="https://www.ttrar.com/uploadfile/2018/0709/20180709100442717.png" alt="">
+                        </a>
+                    </div>
+                    <div class="game-center">
+                        <h3>
+                            <a href="">球球大作战腾讯版</a>
+                        </h3>
+                        <div class="game-info">休闲益智 | 127.5MB</div>
+                        <p class="game-detail">小编点评:球球大作战腾讯版是一款非常好玩的游戏</p>
+                    </div>
+                    <a href="" class="game-right">下载</a>
+                </li>
+            </ul>
+            <ul class="game-list" style="display: none;">
+                <li class="game-item">
+                    <div class="game-left">
+                        <a href="">
+                            <img src="https://www.ttrar.com/uploadfile/2018/0710/20180710105238577.png" alt="">
+                        </a>
+                    </div>
+                    <div class="game-center">
+                        <h3>
+                            <a href="">球球大作战腾讯版</a>
+                        </h3>
+                        <div class="game-info">休闲益智 | 127.5MB</div>
+                        <p class="game-detail">小编点评:球球大作战腾讯版是一款非常好玩的游戏</p>
+                    </div>
+                    <a href="" class="game-right">下载</a>
+                </li>
+                <li class="game-item">
+                    <div class="game-left">
+                        <a href="">
+                            <img src="https://www.ttrar.com/uploadfile/2018/0710/20180710105238577.png" alt="">
+                        </a>
+                    </div>
+                    <div class="game-center">
+                        <h3>
+                            <a href="">球球大作战腾讯版</a>
+                        </h3>
+                        <div class="game-info">休闲益智 | 127.5MB</div>
+                        <p class="game-detail">小编点评:球球大作战腾讯版是一款非常好玩的游戏</p>
+                    </div>
+                    <a href="" class="game-right">下载</a>
+                </li>
+                <li class="game-item">
+                    <div class="game-left">
+                        <a href="">
+                            <img src="https://www.ttrar.com/uploadfile/2018/0710/20180710105238577.png" alt="">
+                        </a>
+                    </div>
+                    <div class="game-center">
+                        <h3>
+                            <a href="">球球大作战腾讯版</a>
+                        </h3>
+                        <div class="game-info">休闲益智 | 127.5MB</div>
+                        <p class="game-detail">小编点评:球球大作战腾讯版是一款非常好玩的游戏</p>
+                    </div>
+                    <a href="" class="game-right">下载</a>
+                </li>
+                <li class="game-item">
+                    <div class="game-left">
+                        <a href="">
+                            <img src="https://www.ttrar.com/uploadfile/2018/0710/20180710105238577.png" alt="">
+                        </a>
+                    </div>
+                    <div class="game-center">
+                        <h3>
+                            <a href="">球球大作战腾讯版</a>
+                        </h3>
+                        <div class="game-info">休闲益智 | 127.5MB</div>
+                        <p class="game-detail">小编点评:球球大作战腾讯版是一款非常好玩的游戏</p>
+                    </div>
+                    <a href="" class="game-right">下载</a>
+                </li>
+                <li class="game-item">
+                    <div class="game-left">
+                        <a href="">
+                            <img src="https://www.ttrar.com/uploadfile/2018/0710/20180710105238577.png" alt="">
+                        </a>
+                    </div>
+                    <div class="game-center">
+                        <h3>
+                            <a href="">球球大作战腾讯版</a>
+                        </h3>
+                        <div class="game-info">休闲益智 | 127.5MB</div>
+                        <p class="game-detail">小编点评:球球大作战腾讯版是一款非常好玩的游戏</p>
+                    </div>
+                    <a href="" class="game-right">下载</a>
+                </li>
+            </ul>
+
+        </div>
+        <!-- 独家推荐 -->
+        <section class="box3733">
+            <div class="hd">
+                <div class="hd-title">独家推荐</div>
+            </div>
+            <div class="box-container">
+                <img src="lib/images/3733.jpg" alt="" class="box-img">
+                <div class="box-container">
+                    <div class="box-name">3733游戏盒</div>
+                    <div class="box-boon">海量BT版、满V版、GM权限、破解版手游,高速、安全下载</div>
+                </div>
+                <a class="box-download" id="boxurl" href="http://xiazai.3733.com/apk/gamebox/latest/3733gamebox_3733appPC.apk">免费下载</a>
+            </div>
+        </section>
+        <!-- 热门视频 -->
+        <div class="hot-video">
+            <div class="section-title">
+                <h3>热门视频</h3>
+            </div>
+            <ul class="video-list">
+                <li class="video-item"><a href="">
+                    <div class="pic-box">
+                        <img src="http://bbsimage.vrzy.com/forum/threadcover/a0/0e/2007.jpg" alt="">
+                    </div>
+                    <h3>美女VR眼镜有鬼VR视频眼镜有鬼</h3>
+                    <p class="recom-p">热门推荐</p>
+                </a>
+                </li>
+                <li class="video-item"><a href="">
+                    <div class="pic-box"><img src="http://bbsimage.vrzy.com/forum/threadcover/a0/0e/2007.jpg" alt=""></div>
+                    <h3>美女VR眼镜有鬼VR视频眼镜有鬼</h3>
+                    <p class="recom-p">热门推荐</p>
+                </a>
+                </li>
+                <li class="video-item"><a href="">
+                    <div class="pic-box"><img src="http://bbsimage.vrzy.com/forum/threadcover/a0/0e/2007.jpg" alt=""></div>
+                    <h3>美女VR眼镜有鬼VR视频眼镜有鬼</h3>
+                    <p class="recom-p">热门推荐</p>
+                </a>
+                </li>
+                <li class="video-item"><a href="">
+                    <div class="pic-box"><img src="http://bbsimage.vrzy.com/forum/threadcover/a0/0e/2007.jpg" alt=""></div>
+                    <h3>美女VR眼镜有鬼VR视频眼镜有鬼</h3>
+                    <p class="recom-p">热门推荐</p>
+                </a>
+                </li>
+            </ul>
+            <a href="" class="more-link">查看更多热门视频</a>
+        </div>
+        <!-- 热门专题 -->
+        <div class="hot-topic">
+            <div class="section-title">
+                <h3>热门专题</h3>
+            </div>
+            <ul class="topic-list">
+                <li class="topic-item"><a href="">
+                    <div class="pic-box"><img src="http://bbsimage.vrzy.com/forum/threadcover/a0/0e/2007.jpg" alt=""></div>
+                    <h3>美女VR眼镜有鬼VR视频眼镜有鬼</h3>
+                    <p class="recom-p">热门推荐</p>
+                </a>
+                </li>
+                <li class="topic-item"><a href="">
+                    <div class="pic-box"><img src="http://www.vrzhijia.com/d/file/p/2018-07-17/c74f1bdec10b2fa137347aa52fab09f5.png" alt=""></div>
+                    <h3>美女VR眼镜有鬼VR视频眼镜有鬼</h3>
+                    <p class="recom-p">热门推荐</p>
+                </a>
+                </li>
+                <li class="topic-item"><a href="">
+                    <div class="pic-box"><img src="http://bbsimage.vrzy.com/forum/threadcover/a0/0e/2007.jpg" alt=""></div>
+                    <h3>美女VR眼镜有鬼VR视频眼镜有鬼</h3>
+                    <p class="recom-p">热门推荐</p>
+                </a>
+                </li>
+                <li class="topic-item"><a href="">
+                    <div class="pic-box"><img src="http://bbsimage.vrzy.com/forum/threadcover/a0/0e/2007.jpg" alt=""></div>
+                    <h3>美女VR眼镜有鬼VR视频眼镜有鬼</h3>
+                    <p class="recom-p">热门推荐</p>
+                </a>
+                </li>
+            </ul>
+            <a href="" class="more-link">查看更多热门专题</a>
+        </div>
+                <!-- 资讯列表 -->
+        <section class="news-list">
+            <ul class="news-title">
+                <li class="title-item tab5 on">资讯</li>
+                <li class="title-item tab5">VR评测</li>
+                <li class="title-item tab5">游戏动态</li>
+            </ul>
+            <ul class="news-container content5 on">
+                <li class="news-item">
+                    <a href="">
+                        <img src="http://bbsimage.vrzy.com/forum/threadcover/a0/0e/2007.jpg" alt="" class="news-img">
+                        <div class="news-wrapper">
+                            <div class="news-content-title">非人学园太白金星有什么技能_非人学园太白金星技能介绍</div>
+                            <div class="news-content">在天界段位不低的上仙，他也是当年猴子请来的救兵之一。他就是传说中的太白金星!在小编的印象中太白金星是一个慈祥和蔼的白胡子，或者是给点春光就灿烂的跳脱角色。接下来小编为大家带来非人学园太白金星技能介绍。</div>
+                            <div class="news-footer">
+                                <i class="icon icon1"></i>
+                                <span class="date">2018-04-18</span>
+                                <i class="icon icon2"></i>
+                                <span class="small-text">1</span>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="news-item">
+                    <a href="">
+                        <img src="http://bbsimage.vrzy.com/forum/threadcover/a0/0e/2007.jpg" alt="" class="news-img">
+                        <div class="news-wrapper">
+                            <div class="news-content-title">非人学园太白金星有什么技能_非人学园太白金星技能介绍</div>
+                            <div class="news-content">在天界段位不低的上仙，他也是当年猴子请来的救兵之一。他就是传说中的太白金星!在小编的印象中太白金星是一个慈祥和蔼的白胡子，或者是给点春光就灿烂的跳脱角色。接下来小编为大家带来非人学园太白金星技能介绍。</div>
+                            <div class="news-footer">
+                                <i class="icon icon1"></i>
+                                <span class="date">2018-04-18</span>
+                                <i class="icon icon2"></i>
+                                <span class="small-text">1</span>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="news-item">
+                    <a href="">
+                        <img src="http://bbsimage.vrzy.com/forum/threadcover/a0/0e/2007.jpg" alt="" class="news-img">
+                        <div class="news-wrapper">
+                            <div class="news-content-title">非人学园太白金星有什么技能_非人学园太白金星技能介绍</div>
+                            <div class="news-content">在天界段位不低的上仙，他也是当年猴子请来的救兵之一。他就是传说中的太白金星!在小编的印象中太白金星是一个慈祥和蔼的白胡子，或者是给点春光就灿烂的跳脱角色。接下来小编为大家带来非人学园太白金星技能介绍。</div>
+                            <div class="news-footer">
+                                <i class="icon icon1"></i>
+                                <span class="date">2018-04-18</span>
+                                <i class="icon icon2"></i>
+                                <span class="small-text">1</span>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            <ul class="news-container content5">
+                <li class="news-item">
+                    <a href="">
+                        <img src="http://img.apk8.com/d/file/zixun/2018-04-18/d1ceb83ccfca99d72cd7637aaa5a59ed.jpg" alt="" class="news-img">
+                        <div class="news-wrapper">
+                            <div class="news-content-title">非人学园太白金星有什么技能_非人学园太白金星技能介绍</div>
+                            <div class="news-content">在天界段位不低的上仙，他也是当年猴子请来的救兵之一。他就是传说中的太白金星!在小编的印象中太白金星是一个慈祥和蔼的白胡子，或者是给点春光就灿烂的跳脱角色。接下来小编为大家带来非人学园太白金星技能介绍。</div>
+                            <div class="news-footer">
+                                <i class="icon icon1"></i>
+                                <span class="date">2018-04-18</span>
+                                <i class="icon icon2"></i>
+                                <span class="small-text">1</span>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="news-item">
+                    <a href="">
+                        <img src="http://img.apk8.com/d/file/zixun/2018-04-18/d1ceb83ccfca99d72cd7637aaa5a59ed.jpg" alt="" class="news-img">
+                        <div class="news-wrapper">
+                            <div class="news-content-title">非人学园太白金星有什么技能_非人学园太白金星技能介绍</div>
+                            <div class="news-content">在天界段位不低的上仙，他也是当年猴子请来的救兵之一。他就是传说中的太白金星!在小编的印象中太白金星是一个慈祥和蔼的白胡子，或者是给点春光就灿烂的跳脱角色。接下来小编为大家带来非人学园太白金星技能介绍。</div>
+                            <div class="news-footer">
+                                <i class="icon icon1"></i>
+                                <span class="date">2018-04-18</span>
+                                <i class="icon icon2"></i>
+                                <span class="small-text">1</span>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="news-item">
+                    <a href="">
+                        <img src="http://img.apk8.com/d/file/zixun/2018-04-18/d1ceb83ccfca99d72cd7637aaa5a59ed.jpg" alt="" class="news-img">
+                        <div class="news-wrapper">
+                            <div class="news-content-title">非人学园太白金星有什么技能_非人学园太白金星技能介绍</div>
+                            <div class="news-content">在天界段位不低的上仙，他也是当年猴子请来的救兵之一。他就是传说中的太白金星!在小编的印象中太白金星是一个慈祥和蔼的白胡子，或者是给点春光就灿烂的跳脱角色。接下来小编为大家带来非人学园太白金星技能介绍。</div>
+                            <div class="news-footer">
+                                <i class="icon icon1"></i>
+                                <span class="date">2018-04-18</span>
+                                <i class="icon icon2"></i>
+                                <span class="small-text">1</span>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            <ul class="news-container content5">
+                <li class="news-item">
+                    <a href="">
+                        <img src="http://newsimg.5054399.com/uploads/170712/_1543205E.jpg" alt="" class="news-img">
+                        <div class="news-wrapper">
+                            <div class="news-content-title">非人学园太白金星有什么技能_非人学园太白金星技能介绍</div>
+                            <div class="news-content">在天界段位不低的上仙，他也是当年猴子请来的救兵之一。他就是传说中的太白金星!在小编的印象中太白金星是一个慈祥和蔼的白胡子，或者是给点春光就灿烂的跳脱角色。接下来小编为大家带来非人学园太白金星技能介绍。</div>
+                            <div class="news-footer">
+                                <i class="icon icon1"></i>
+                                <span class="date">2018-04-18</span>
+                                <i class="icon icon2"></i>
+                                <span class="small-text">1</span>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="news-item">
+                    <a href="">
+                        <img src="http://newsimg.5054399.com/uploads/170712/_1543205E.jpg" alt="" class="news-img">
+                        <div class="news-wrapper">
+                            <div class="news-content-title">非人学园太白金星有什么技能_非人学园太白金星技能介绍</div>
+                            <div class="news-content">在天界段位不低的上仙，他也是当年猴子请来的救兵之一。他就是传说中的太白金星!在小编的印象中太白金星是一个慈祥和蔼的白胡子，或者是给点春光就灿烂的跳脱角色。接下来小编为大家带来非人学园太白金星技能介绍。</div>
+                            <div class="news-footer">
+                                <i class="icon icon1"></i>
+                                <span class="date">2018-04-18</span>
+                                <i class="icon icon2"></i>
+                                <span class="small-text">1</span>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="news-item">
+                    <a href="">
+                        <img src="http://newsimg.5054399.com/uploads/170712/_1543205E.jpg" alt="" class="news-img">
+                        <div class="news-wrapper">
+                            <div class="news-content-title">非人学园太白金星有什么技能_非人学园太白金星技能介绍</div>
+                            <div class="news-content">在天界段位不低的上仙，他也是当年猴子请来的救兵之一。他就是传说中的太白金星!在小编的印象中太白金星是一个慈祥和蔼的白胡子，或者是给点春光就灿烂的跳脱角色。接下来小编为大家带来非人学园太白金星技能介绍。</div>
+                            <div class="news-footer">
+                                <i class="icon icon1"></i>
+                                <span class="date">2018-04-18</span>
+                                <i class="icon icon2"></i>
+                                <span class="small-text">1</span>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <!-- 友情链接 -->
+    <div class="friend-link">
+        <h3>友情链接</h3>
+        <div class="link-list">
+            <a href="">VR之家</a>
+        </div>
+    </div>
+    <!-- 尾部 -->
+    <div class="footer">
+        <p class="footer-green-nav">
+            <a href="/">首页</a>
+            <a href="/zhuanti/">专题</a>
+            <a href="/rank/">排行</a>
+            <a href="/feedback/">反馈</a>
+        </p>
+        <p class="footer-reg">
+            <a href="http://www.vrzhijia.com">PC端</a>
+            <span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+            <a href="/feedback/">提建议</a>
+        </p>
+        <p class="footer-bottom">
+            ©2011-2018 &nbsp;&nbsp;VR之家
+            <span id="cnzz_stat_icon_1259917078">
+                <a href="http://www.cnzz.com/stat/website.php?web_id=1259917078" target="_blank" title="站长统计">站长统计</a>
+            </span>
+        </p>
+    </div>
+    <script>
+
+        
+    $(function(){
+        var azboxurl = 'http://www.vrzhijia.com/gourl3.html';
+        var iosboxurl = 'http://xapi.3733.com/mobile.php/Mobile/Game/sub/appid/6043.html';
+        var ua = navigator.userAgent.toLowerCase();
+        var platform = {
+            ios: function () {
+                return (/iphone|ipad|ipod|ios/i.test(ua));
+            },
+            android: function () {
+                return (/android/i.test(ua));
+            }
+        }
+        console.log(platform.ios());
+        if (platform.ios()) {
+            $("#boxurl").attr("href", iosboxurl);
+        } else if (platform.android()) {
+            $("#boxurl").attr("href", azboxurl);
+        }
+    })
+
+    </script>
+</body>
+<script src="lib/js/common.js"></script>
+<script src="lib/js/index.js"></script>
+
+</html>
