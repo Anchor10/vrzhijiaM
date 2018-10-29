@@ -81,23 +81,13 @@
     </div>
     <div class="wrap" id="alist">
         <div class="h-top header-fixed">
-            <div class="header-blue">
-                <h1 class="return">
-                    <a href="/fuli/">
-                        <img src="lib/images/back_btn.png">
-                    </a>
-                </h1>
-                <div class="mar-out">
-                    <div class="title">
-                        <div class="title-box">
-                            <div class="title-name">独孤天下</div>
-                        </div>
-                    </div>
-                </div>
-                <script src="lib/js/jquery-marquee.js" type="text/javascript"></script>
-                <div class="header-func">
-                    <div class="top-more"></div>
-                </div>
+            <div class="android-header">
+                <a href="/">
+                    <img src="lib/images/bule-logo.png" alt="VR之家" class="tongyi fl">
+                </a>
+                <a href="javascript:void(0)" title="快捷导航">
+                    <div class="top-more fr"></div>
+                </a>
                 <div class="top-search">
                     <form method="post" action="/e/search/index.php">
                         <input type="hidden" name="show" value="title">
@@ -136,15 +126,24 @@
                         <p class="con-wel">上线赠送满V(VIP15) ,钻石10888,金币300万</p>
                     </div>
                 </div>
-                <div class="con-download">
-                    <a href="" class="android-download">
-                        <span></span>安卓下载</a>
-                    <a href="" class="box-download">
-                        <span></span>3733游戏盒子</a>
-                </div>
-                <p class="con-tips">
-                    <span class="mark-icon"></span>下载
-                    <span class="box-orange">3733游戏盒</span> 海量BT,满V,GM权限,破解版游戏任你下载!</p>
+                <div class="ptxzbox" style="display:block">
+                    <p class="pgx" data-value="2">
+                      <input type="radio" name="syb" checked="checked">
+                      <span></span>
+                      <em>使用3733游戏盒子</em>
+                      
+                    </p>
+                    <p class="pxz xz">
+                      <a id="url" class="gs" href="http://xapi.3733.com/mobile.php/Mobile/Game/sub/appid/6043.html">
+                        <em id="test">高速下载</em>
+                        <span class="notes">需下载3733游戏盒</span>
+                      </a>
+                    </p>
+                  </div>
+                  <div id="ptips" class="ptips" style="display:block">
+                    <p style="text-align:left;">
+                      <span></span>安装3733游戏盒，免费畅玩BT版、满VIP版、GM版游戏，还有加速辅助让游戏更畅快！</p>
+                  </div>
             </div>
             <div class="game-intro">
                 <div class="section-title">
@@ -1162,22 +1161,58 @@
         </div>
         <script>
             $(function () {
-                var ua = navigator.userAgent.toLowerCase();
-                var platform = {
-                    ios: function () {
-                        return (/iphone|ipad|ipod|ios/i.test(ua));
-                    },
-                    android: function () {
-                        return (/android/i.test(ua));
-                    }
+              var iobox = 'http://xapi.3733.com/mobile.php/Mobile/Game/sub/appid/6043.html';
+              var azbox = 'http://www.apk8.com/gourl.php?gtype=box';
+              var iogame = 'http://xapi.3733.com/mobile.php/Mobile/Game/sub/appid/6043.html';
+              var azgame = 'http://app.ercy.vip/direct/csandroid_zuiben';
+              var ua = navigator.userAgent.toLowerCase();
+              var platform = {
+                ios: function () {
+                  return (/iphone|ipad|ipod|ios/i.test(ua));
+                },
+                android: function () {
+                  return (/android/i.test(ua));
                 }
-                if (platform.ios()) {
-                    console.log("ios");
-                } else if (platform.android()) {
-                    console.log("android");
+              }
+              if (platform.ios()) {
+                var sys = 666;
+                $("#url").attr("href", iobox);
+              } else {
+                  $("#url").attr("href", azbox);
+              }
+              $("input:radio[name='syb']").attr("checked", true);
+              var _span = $(
+                '<span class="notes">需下载3733游戏盒</span>'
+              )
+              $(".pgx").on('click', function () {
+                if ($(this).attr("data-value") == 1) {
+                  $("#url").addClass('gs').removeClass('pt').find("em").html('高速下载');
+                  $("#url").append(_span);
+                  if (sys == 666) {
+                    $("#url").attr("href", iobox);
+                  } else {
+                    $("#url").attr("href", azbox);
+                  }
+                  $("#url").removeClass("tc");
+                  $("input:radio[name='syb']").attr("checked", true);
+                  $("#ptips").html('<p><span></span>安装3733游戏盒，免费畅玩BT版、满VIP版、GM版游戏，还有加速辅助让游戏更畅快！</p>');
+                  $(this).attr("data-value", '2');
+                } else {
+                  $("#url").addClass('pt').removeClass('gs').find('em').html("普通下载");
+                  $('.notes').remove();
+                  $("#url").addClass("tc");
+                  if (sys == 666 && iogame) {
+                    $("#url").attr("href", iogame);
+                  } else {
+                    $("#url").attr("href", azgame);
+                  }
+                  $("input:radio[name='syb']").attr("checked", false);
+                  $("#ptips").html('<p><span></span>推荐下载3733游戏盒，找游戏更方便，还有上线送满级VIP、无限元宝等福利等你来拿！</p>');
+                  $(this).attr("data-value", '1');
                 }
+              });
             })
-        </script>
+          </script>
 </body>
 <script src="lib/js/common.js"></script>
 <script src="lib/js/downloadBT.js"></script>

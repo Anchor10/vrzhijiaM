@@ -2,13 +2,13 @@ main {
   margin-top: 50px;
 }
 main .seat {
-  height: 32px;
+  height: 20px;
   background: #f0f0f0;
 }
 main .seat p {
   font-size: 12px;
   color: #bdbdbd;
-  line-height: 32px;
+  line-height: 20px;
   text-indent: 5px;
   overflow: hidden;
   white-space: nowrap;
@@ -45,7 +45,7 @@ main .content .con-main .con-right h3 {
   text-overflow: ellipsis;
 }
 main .content .con-main .con-right .con-tag {
-  margin-top: 6px;
+  margin-top: 3px;
   display: flex;
   flex-wrap: wrap;
   max-width: 250px;
@@ -68,7 +68,7 @@ main .content .con-main .con-right .con-wel {
   color: #ff7921;
   line-height: 22px;
   text-indent: 10px;
-  margin-top: 7px;
+  margin-top: 3px;
   border-right: 1px solid #f2f2f2;
   overflow: hidden;
   white-space: nowrap;
@@ -621,4 +621,108 @@ main .m-news-games .bd ul li p {
 .pb20 {
   border-bottom: 6px solid #f5f4f4;
   margin-bottom: 5px;
+}
+
+/* 下载按钮修改 */
+.ptxzbox {
+  height: 50px;
+  padding: 15px;
+  border-top: 1px solid #ccc;
+  background: #fff;
+  box-sizing: initial;
+}
+.ptxzbox .pgx {
+  float: left;
+  line-height: 50px;
+  font-size: 13px;
+  color: #666;
+  position: relative;
+}
+.ptxzbox .pgx input {
+  position: absolute;
+  width: 100%;
+  height: 16px;
+  left: 0;
+  top: 50%;
+  margin-top: -8px;
+  opacity: 0;
+}
+.ptxzbox .pgx span {
+  display: inline-block;
+  vertical-align: middle;
+  width: 18px;
+  height: 18px;
+  background: #c6c6c6 url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAQAAABuvaSwAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAACvSURBVDjL3dIxDgEBEAXQJVkioUNUCq2GGzgCvXNwHDoHUSnJlqJRK0QtTzYs1pLVMtO+YubPFATfVzH4PRzkL6gdq7hzsIoFxl9gLSsc9XOxnj12uqkx1IQZOnTCUv262Q2rOlhrpOjEGXPlJIYEhzaIEq5khrPpc2aPMZqihKtb4mSUDvhpwTsf2GKv93qNVBo3HtdKK3u6l+g0rbFQeXfnTM5CnU9PEXfh35//AqV4pTN4LQzTAAAAAElFTkSuQmCC) no-repeat;
+  background-size: cover;
+  border-radius: 22px;
+  margin-right: 5px;
+}
+.ptxzbox .pgx input:checked+span {
+  background-color: #0ea1f6;
+}
+.ptxzbox .pgx em {
+  vertical-align: middle;
+}
+.ptxzbox .pxz {
+  width: 50%;
+}
+.ptxzbox .pxz.xz {
+  float: right;
+}
+
+.ptxzbox .pxz a {
+  display: block;
+  width: 100%;
+  height: 50px;
+  line-height: 35px;
+  background: #0ea1f6;
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  margin: 0 auto;
+}
+.ptxzbox #url.pt em{
+  line-height: 50px;
+}
+
+.ptxzbox .pxz a.gs em:before {
+  content: '';
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAQAAADYBBcfAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAkElEQVQ4y+2U4Q1AMBBG78QChjCJaezDMiZhCQv48fwQUeWOSEiI71+bvrb30qvKKiBmVMNRIhfzgx8CKRkAvHcjMq1goAwnC3rOpKeI98tpD7GWfO8qGY2LNWRWFSmViVWkrq1FVJC1EBONRW2FmGgoqtsVYqKzKFuIeKLqAyGPRiH+v06Uwav6Uf0evOHEEZFh7x5MEJoIAAAAAElFTkSuQmCC) no-repeat;
+  background-size: cover;
+  margin-right:10px;
+  vertical-align: middle;
+}
+.ptxzbox .pxz a .notes{
+  float: left;
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+  margin-top: -15px;
+}
+
+.ptips {
+  background: #fff5ee;
+  padding: 12px 21px;
+  line-height: 22px;
+  font-size: 14px;
+  color: #ff6c00;
+  text-align: center;
+}
+.ptips p {
+  display: inline-block;
+  position: relative;
+}
+.ptips span {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background: url(../images/tips.png) no-repeat;
+  background-size: cover;
+  position: absolute;
+  left: -13px;
+  top: 5px;
 }

@@ -116,7 +116,6 @@ main .game-list li .mid a {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  margin-top: 2px;
 }
 main .game-list li .mid span {
   font-size: 12px;
@@ -152,7 +151,6 @@ main .game-list li .downfile_hits {
 main .link-more {
   display: block;
   margin: 0 10px;
-  height: 100px;
   background: #f6f6f6;
   font-size: 16px;
   height: 38px;

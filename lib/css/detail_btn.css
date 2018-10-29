@@ -1,0 +1,157 @@
+/*下载按钮*/
+.ptxzbox {
+    height: 76px;
+    padding: 0px 15px;
+    /* border-top: 2px solid #ccc; */
+    background: #fff;
+    box-sizing: initial;
+    overflow: hidden;
+    /* border-top: 1px solid #ccc; */
+    /* border-bottom: 1px solid #ccc; */
+}
+
+.ptxzbox .pxz a {
+    display: block;
+    width: 100%;
+    height: 76px;
+    line-height: 76px;
+    background: #0ea1f6;
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+
+
+.ptxzbox .pgx {
+    float: left;
+    line-height: 76px;
+    font-size: 24px;
+    color: #666;
+    position: relative;
+}
+
+.ptxzbox .pgx input {
+    position: absolute;
+    width: 218px;
+    height: 31px;
+    left: 0;
+    top: 50%;
+    margin-top: -16px;
+    opacity: 0;
+}
+
+.ptxzbox .pgx input:checked+span {
+    background: url(../images/dagou.png) no-repeat;
+    background-size: cover;
+}
+
+.ptxzbox .pgx span {
+    display: inline-block;
+    vertical-align: middle;
+    width: 22px;
+    height: 22px;
+    background-color: #c6c6c6;
+    
+    border-radius: 22px;
+    margin-right: 15px;
+}
+
+/* .ptxzbox .pgx span.on {
+    background-color: #89c963;
+} */
+
+.ptxzbox .pgx em {
+    vertical-align: middle;
+
+}
+em{
+    font-style:normal;
+}
+
+.ptxzbox .pxz {
+    width: 50%;
+}
+
+.ptxzbox .pxz.xz {
+    float: right;
+}
+ .ptxzbox {
+        height:35px;
+    }
+
+    .ptxzbox .pgx {
+        font-size: 15px;
+        line-height: 35px;
+    }
+
+    .ptxzbox .pgx span {
+        width: 18px;
+        height: 18px;
+        margin-right: 5px;
+    }
+
+    .ptxzbox .pgx input {
+        width: 101px;
+        height: 16px;
+        margin-top: -8px;
+    }
+
+    .ptxzbox .pxz a {
+        height: 35px;
+        line-height: 35px;
+        font-size: 16px;
+    }
+    .ptips {
+    background: #fff5ee;
+    padding: 12px 45px;
+    line-height: 40px;
+    font-size: 24px;
+    color: #ff6c00;
+    text-align: center;
+}
+
+.ptips p {
+    display: inline-block;
+    position: relative;
+}
+
+.ptips.nonebg {
+    background: none;
+    color: #999;
+    margin-top: 13px;
+}
+
+.ptips a {
+    color: #66d105;
+}
+
+.ptips span {
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    background: url(../images/tips.png) no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: -23px;
+    top: 10px;
+}
+    .ptips {
+        padding: 12px 21px;
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .ptips span {
+        width: 12px;
+        height: 12px;
+        left: -13px;
+        top: 5px;
+    }
+
+    .ptips.nonebg {
+        padding: 12px 0;
+        margin-top: 0;
+        padding-bottom: 0;
+    }
