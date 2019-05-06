@@ -225,6 +225,9 @@ main {
   color: #7f7f7f;
   display: block;
   font-size: 12px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .xin_game2 .p1 .color-red {
   color: #ed1c24;
