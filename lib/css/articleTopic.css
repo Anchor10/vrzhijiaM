@@ -1,6 +1,3 @@
-main {
-  padding-top: 50px;
-}
 .topic-bg {
   width: 100%;
   height: 100px;
@@ -21,7 +18,6 @@ main {
   font-size: 16px;
   font-weight: 800;
   margin-top: 40px;
-  padding:0 20px;
 }
 .content {
   border-bottom: 8px solid #f0f0f0;
@@ -210,8 +206,8 @@ main {
   position: absolute;
   top: 27px;
   right: 10px;
-  height: 25px;
-  line-height: 27px;
+  height: 30px;
+  line-height: 32px;
   text-align: center;
   width: 60px;
   border-radius: 3px;
@@ -225,12 +221,12 @@ main {
   color: #7f7f7f;
   display: block;
   font-size: 12px;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
 }
 .xin_game2 .p1 .color-red {
   color: #ed1c24;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .xin_game2 span i {
   float: left;
