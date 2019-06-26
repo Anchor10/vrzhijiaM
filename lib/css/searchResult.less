@@ -1,0 +1,234 @@
+.line-e8e8e8{
+    height: 8px;
+    background: #e8e8e8;
+    width: 100%;
+}
+main {
+    padding-top: 50px;
+    height: 100%;
+    .search{
+        width: 100%;
+        border-bottom: 1px solid #cccccc;
+        .search-form{
+            width: 100%;
+            display: block;
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            .back{
+                display: block;
+                width: 30px;
+                height: 30px;
+                background: url(../images/search-back.png) center center no-repeat;
+            }
+            .search-input{
+                box-sizing: border-box;
+                height: 30px;
+                line-height: 30px;
+                flex:1;
+                border: 1px solid #cccccc;
+                padding: 0 10px;
+                input{
+                    width: 100%;
+                    height: 100%;
+                    display: block;
+                    outline: none;
+                    border: 0;
+                    
+                }
+            }
+            .search-btn{
+                display: block;
+                margin: 0 10px;
+                width: 30px;
+                height: 30px;
+                border: 1px solid #cccccc;
+                text-indent: -999px;
+                background: url(../images/search-btn.png) center center no-repeat;
+            }
+        }
+    }
+    .section-title{
+        height: 35px;
+        font-size: 14px;
+        color: #000;
+        border-bottom: 1px solid #eee;
+        h3{
+            border-bottom: 2px solid #0ea1f6;
+            display: inline-block;
+            padding: 0 7px;
+            height: 34px;
+            line-height: 33px;
+            span{
+                color: #ff0000;
+            }
+            i{
+                color: #000;
+            }   
+        }
+    }
+    .related-game{
+        
+        padding-bottom: 10px;
+        .game-box{
+            display: flex;
+            position: relative;
+            padding: 10px;
+            .game-pic{
+                display: block;
+                overflow: hidden;
+                border-radius: 10px;
+                width: 64px;
+                height: 64px;
+                margin-right: 10px;
+                img{
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .game-right{
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                overflow: hidden;
+                min-width: 0;
+                .game-name{
+                    font-size: 16px;
+                    color: #333;
+                }
+                .game-info{
+                    font-size: 12px;
+                    color: #999999;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    margin-top: 12px;
+                }
+            }
+            .game-btn{
+                display: block;
+                position: absolute;
+                right: 10px;
+                top: 10px;
+                width: 80px;
+                height: 30px;
+                line-height: 30px;
+                text-align: center;
+                border: 1px solid #00a2e8;
+                color: #00a2e8;
+                font-size: 14px;
+            }
+        }
+        .game-desc{
+            padding: 0 10px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            font-size: 14px;
+            color: #999;
+        }
+    }
+    .search-list{
+        padding: 0 10px;
+        .search-item{
+            height: 35px;
+            line-height: 35px;
+            border-bottom: 1px dashed #cccccc;
+            a{
+                display: block;
+                display: flex;
+                .item-title{
+                    padding-left: 18px;
+                    flex: 1;
+                    position: relative;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    margin-right: 10px;
+                    font-size: 14px;
+                    color: #666666;
+                    &:before{
+                        content:'';
+                        position: absolute;
+                        width: 5px;
+                        height: 5px;
+                        border-radius: 50%;
+                        background: #c5c5c5;
+                        left: 7px;
+                        top: 50%;
+                        transform: translateY(-50%);
+                    }
+                }
+            }
+        }
+    }
+    .hot-word{
+        .hot-word-title{
+            overflow: hidden;
+            border-bottom: 1px solid #eeeeee;
+            font-size: 14px;
+            h3{
+                display: inline-block;
+                height: 30px;
+                line-height: 30px;
+                padding-left: 33px;
+                padding-right: 7px;
+                background: url(../images/search-icon.png) 9px center no-repeat;
+                border-bottom: 2px solid #00a2e8;
+                margin-top: 12px;
+            }
+        }
+        .word-list{
+            display: flex;
+            flex-wrap: wrap;
+            .word-item{
+                box-sizing: border-box;
+                width: 33.3%;
+                height: 40px;
+                line-height: 40px;
+                padding: 0 8px;
+                border: 1px solid #eee;
+                border-left: 0;
+                border-top: 0;
+                &:nth-of-type(3n){
+                    border-right: 0;
+                }
+                &.up{
+                    a{
+                        i{
+                            background: url(../images/up-icon.png) center center no-repeat;
+                        }
+                    }
+                }
+                &.hot{
+                    a{
+                        i{
+                            background: url(../images/hot-icon.png) center center no-repeat;
+                        }
+                    }
+                }
+                a{
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    min-width: 0;
+                    span{
+                        flex: 1;
+                        text-align: center;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                    }
+                    i{
+                        width: 12px;
+                        height: 100%;
+                        
+                    }
+                }
+            }
+        }
+    }
+  }
