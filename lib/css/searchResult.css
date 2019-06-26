@@ -4,7 +4,6 @@
   width: 100%;
 }
 main {
-  padding-top: 50px;
   height: 100%;
 }
 main .search {
@@ -123,11 +122,13 @@ main .related-game .game-box .game-btn {
 }
 main .related-game .game-desc {
   padding: 0 10px;
+  font-size: 14px;
+  color: #999;
+}
+main .related-game .game-desc p {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  font-size: 14px;
-  color: #999;
 }
 main .search-list {
   padding: 0 10px;

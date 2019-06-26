@@ -33,6 +33,7 @@ html {
 body{
     max-width: 650px;
     margin:0 auto;
+    padding-top: 50px;
 }
 img {
     border: 0 none;
