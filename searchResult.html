@@ -277,26 +277,6 @@
                 </span>
             </p>
         </div>
-        <script>
-            $(function () {
-                var ua = navigator.userAgent.toLowerCase();
-                var platform = {
-                    ios: function () {
-                        return (/iphone|ipad|ipod|ios/i.test(ua));
-                    },
-                    android: function () {
-                        return (/android/i.test(ua));
-                    }
-                }
-                if (platform.ios()) {
-                    console.log("ios");
-                } else if (platform.android()) {
-                    console.log("android");
-                }
-            })
-        </script>
 </body>
 <script src="lib/js/common.js"></script>
-<script src="lib/js/topicDetail.js"></script>
-
 </html>
